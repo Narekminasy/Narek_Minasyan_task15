@@ -11,7 +11,6 @@ export default {
             next(e);
         }
     },
-
     async list(req, res, next) {
         try {
             const result = await Courses.findAll();
@@ -21,7 +20,6 @@ export default {
             next(e);
         }
     },
-
     async getById(req, res, next) {
         try {
             const course = await Courses.findByPk(req.params.id, {
